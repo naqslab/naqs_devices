@@ -21,19 +21,19 @@ but that functionality is untested.
 Detailed Documentation
 ----------------------
 
-.. automodule:: naqs_devices.KeysightDCSupply.labscript_device
+.. automodule:: naqs_devices.KeysightDCSupply.labscript_devices
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqs_devices.KeysightDCSupply.blacs_tab
+.. automodule:: naqs_devices.KeysightDCSupply.blacs_tabs
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqs_devices.KeysightDCSupply.blacs_worker
+.. automodule:: naqs_devices.KeysightDCSupply.blacs_workers
    :members:
    :undoc-members:
    :show-inheritance:

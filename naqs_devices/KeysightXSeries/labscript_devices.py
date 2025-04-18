@@ -1,6 +1,6 @@
 #####################################################################
 #                                                                   #
-# /naqs_devices/KeysightXSeries/labscript_device.py                 #
+# /naqs_devices/KeysightXSeries/labscript_devices.py                #
 #                                                                   #
 # Copyright 2018, David Meyer                                       #
 #                                                                   #

@@ -14,5 +14,5 @@ import labscript_devices
 
 labscript_devices.register_classes(
     'KeysightDCSupply',
-    BLACS_tab='naqs_devices.KeysightDCSupply.blacs_tab.KeysightDCSupplyTab',
+    BLACS_tab='naqs_devices.KeysightDCSupply.blacs_tabs.KeysightDCSupplyTab',
     runviewer_parser='')

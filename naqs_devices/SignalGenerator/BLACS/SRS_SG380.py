@@ -9,9 +9,9 @@
 #                                                                   #
 #                                                                   #
 #####################################################################
-from naqs_devices.SignalGenerator.blacs_tab import SignalGeneratorTab
-from naqs_devices.SignalGenerator.blacs_worker import SignalGeneratorWorker
-from naqs_devices.VISA.blacs_worker import VISAWorker
+from naqs_devices.SignalGenerator.blacs_tabs import SignalGeneratorTab
+from naqs_devices.SignalGenerator.blacs_workers import SignalGeneratorWorker
+from naqs_devices.VISA.blacs_workers import VISAWorker
 from labscript import LabscriptError
 from labscript_utils import dedent
 

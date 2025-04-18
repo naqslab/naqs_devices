@@ -9,8 +9,8 @@
 #                                                                   #
 #                                                                   #
 #####################################################################
-from naqs_devices.SignalGenerator.blacs_tab import SignalGeneratorTab
-from naqs_devices.SignalGenerator.blacs_worker import SignalGeneratorWorker
+from naqs_devices.SignalGenerator.blacs_tabs import SignalGeneratorTab
+from naqs_devices.SignalGenerator.blacs_workers import SignalGeneratorWorker
 from labscript import LabscriptError      
         
 class RS_SMF100ATab(SignalGeneratorTab):

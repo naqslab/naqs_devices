@@ -9,7 +9,7 @@
 #                                                                   #
 #                                                                   #
 #####################################################################
-from naqs_devices.SignalGenerator.labscript_device import SignalGenerator
+from naqs_devices.SignalGenerator.labscript_devices import SignalGenerator
 from labscript import set_passed_properties, LabscriptError
 from labscript_utils import dedent
 

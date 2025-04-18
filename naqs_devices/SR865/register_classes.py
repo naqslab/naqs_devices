@@ -14,5 +14,5 @@ import labscript_devices
 
 labscript_devices.register_classes(
     'SR865',
-    BLACS_tab='naqs_devices_new.SR865.blacs_tab.SR865Tab',
+    BLACS_tab='naqs_devices.SR865.blacs_tabs.SR865Tab',
     runviewer_parser='')

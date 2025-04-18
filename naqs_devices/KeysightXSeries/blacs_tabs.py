@@ -9,7 +9,7 @@
 #                                                                   #
 #                                                                   #
 #####################################################################
-from naqs_devices.VISA.blacs_tab import VISATab 
+from naqs_devices.VISA.blacs_tabs import VISATab
 
 class KeysightXScopeTab(VISATab):
     # Event Byte Label Definitions for X series scopes
@@ -25,7 +25,7 @@ class KeysightXScopeTab(VISATab):
     
     def __init__(self,*args,**kwargs):
         if not hasattr(self,'device_worker_class'):
-            self.device_worker_class = 'naqs_devices.KeysightXSeries.blacs_worker.KeysightXScopeWorker'
+            self.device_worker_class = 'naqs_devices.KeysightXSeries.blacs_workers.KeysightXScopeWorker'
         VISATab.__init__(self,*args,**kwargs)
     
     def initialise_GUI(self):

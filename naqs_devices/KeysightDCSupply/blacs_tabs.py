@@ -9,7 +9,7 @@
 #                                                                   #
 #                                                                   #
 #####################################################################
-from naqs_devices.VISA.blacs_tab import VISATab 
+from naqs_devices.VISA.blacs_tabs import VISATab 
 
 # note, when adding a new model, put the labscript_device inheritor class
 # into Models.py and the BLACS classes into a file named for the device
@@ -29,7 +29,7 @@ class KeysightDCSupplyTab(VISATab):
                           
     
     def __init__(self,*args,**kwargs):
-        self.device_worker_class = 'naqs_devices.KeysightDCSupply.blacs_worker.KeysightDCSupplyWorker'
+        self.device_worker_class = 'naqs_devices.KeysightDCSupply.blacs_workers.KeysightDCSupplyWorker'
         VISATab.__init__(self,*args,**kwargs)
     
     def initialise_GUI(self):

@@ -9,19 +9,19 @@ This covers the TDS series of Tektronix oscilloscopes.
 Detailed Documentation
 ----------------------
 
-.. automodule:: naqs_devices.TektronixTDS.labscript_device
+.. automodule:: naqs_devices.TektronixTDS.labscript_devices
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqs_devices.TektronixTDS.blacs_tab
+.. automodule:: naqs_devices.TektronixTDS.blacs_tabs
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqs_devices.TektronixTDS.blacs_worker
+.. automodule:: naqs_devices.TektronixTDS.blacs_workers
    :members:
    :undoc-members:
    :show-inheritance:

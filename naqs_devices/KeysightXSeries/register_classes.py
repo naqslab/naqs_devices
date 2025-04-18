@@ -14,5 +14,5 @@ import labscript_devices
 
 labscript_devices.register_classes(
     'KeysightXScope',
-    BLACS_tab='naqs_devices.KeysightXSeries.blacs_tab.KeysightXScopeTab',
+    BLACS_tab='naqs_devices.KeysightXSeries.blacs_tabs.KeysightXScopeTab',
     runviewer_parser='')

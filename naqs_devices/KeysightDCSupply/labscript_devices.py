@@ -11,7 +11,7 @@
 #####################################################################
 import numpy as np
 
-from naqs_devices.VISA.labscript_device import VISA
+from naqs_devices.VISA.labscript_devices import VISA
 from labscript import StaticAnalogOut, LabscriptError, set_passed_properties, config
 
 __version__ = '0.1.0'

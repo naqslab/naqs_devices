@@ -9,8 +9,8 @@
 #                                                                   #
 #                                                                   #
 #####################################################################
-from naqs_devices.SignalGenerator.blacs_tab import SignalGeneratorTab
-from naqs_devices.SignalGenerator.blacs_worker import SignalGeneratorWorker, enable_on_off_formatter
+from naqs_devices.SignalGenerator.blacs_tabs import SignalGeneratorTab
+from naqs_devices.SignalGenerator.blacs_workers import SignalGeneratorWorker, enable_on_off_formatter
 from labscript import LabscriptError
 from labscript_utils import dedent
 

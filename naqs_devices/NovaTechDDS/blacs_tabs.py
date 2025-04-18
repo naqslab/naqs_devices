@@ -1,6 +1,6 @@
 #####################################################################
 #                                                                   #
-# /naqs_devices/NovaTechDDS/blacs_tab.py                            #
+# /naqs_devices/NovaTechDDS/blacs_tabs.py                           #
 #                                                                   #
 # Copyright 2018, David Meyer                                       #
 #                                                                   #
@@ -17,7 +17,7 @@ class NovaTech409B_ACTab(DeviceTab):
 
     def __init__(self,*args,**kwargs):
         if not hasattr(self,'device_worker_class'):
-            self.device_worker_class = "naqs_devices.NovaTechDDS.blacs_worker.NovaTech409B_ACWorker"
+            self.device_worker_class = "naqs_devices.NovaTechDDS.blacs_workers.NovaTech409B_ACWorker"
         DeviceTab.__init__(self,*args,**kwargs)
 
     def initialise_GUI(self):        
@@ -89,14 +89,14 @@ class NovaTech409B_ACTab(DeviceTab):
 class NovaTech409BTab(NovaTech409B_ACTab):
     
     def __init__(self,*args,**kwargs):
-        self.device_worker_class = "naqslab_devices.NovaTechDDS.blacs_worker.NovaTech409BWorker"
+        self.device_worker_class = "naqs_devices.NovaTechDDS.blacs_workers.NovaTech409BWorker"
         NovaTech409B_ACTab.__init__(self,*args,**kwargs)
 
 class NovaTech440ATab(NovaTech409B_ACTab):
     
     def __init__(self,*args,**kwargs):
         if not hasattr(self,'device_worker_class'):
-            self.device_worker_class = "naqslab_devices.NovaTechDDS.blacs_worker.NovaTech440AWorker"
+            self.device_worker_class = "naqs_devices.NovaTechDDS.blacs_workers.NovaTech440AWorker"
         DeviceTab.__init__(self,*args,**kwargs)
         
     def initialise_GUI(self):        

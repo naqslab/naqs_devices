@@ -10,7 +10,7 @@
 #                                                                   #
 #####################################################################
 import numpy as np
-from naqs_devices.VISA.blacs_worker import VISAWorker
+from naqs_devices.VISA.blacs_workers import VISAWorker
 from labscript import LabscriptError
 import labscript_utils.properties
 

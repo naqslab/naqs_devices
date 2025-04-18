@@ -14,17 +14,17 @@ import labscript_devices
 
 labscript_devices.register_classes(
     'NovaTech409B',
-    BLACS_tab='naqs_devices.NovaTechDDS.blacs_tab.NovaTech409BTab',
-    runviewer_parser='naqs_devices.NovaTechDDS.runviewer_parser.NovaTech409BParser',
+    BLACS_tab='naqs_devices.NovaTechDDS.blacs_tabs.NovaTech409BTab',
+    runviewer_parser='naqs_devices.NovaTechDDS.runviewer_parsers.NovaTech409BParser',
 )
 
 labscript_devices.register_classes(
     'NovaTech409B_AC',
-    BLACS_tab='naqs_devices.NovaTechDDS.blacs_tab.NovaTech409B_ACTab',
-    runviewer_parser='naqs_devices.NovaTechDDS.runviewer_parser.NovaTech409B_ACParser',
+    BLACS_tab='naqs_devices.NovaTechDDS.blacs_tabs.NovaTech409B_ACTab',
+    runviewer_parser='naqs_devices.NovaTechDDS.runviewer_parsers.NovaTech409B_ACParser',
 )
 
 labscript_devices.register_classes(
     'NovaTech440A',
-    BLACS_tab='naqs_devices.NovaTechDDS.blacs_tab.NovaTech440ATab',
-    runviewer_parser='naqs_devices.NovaTechDDS.runviewer_parser.NovaTech440AParser')
+    BLACS_tab='naqs_devices.NovaTechDDS.blacs_tabs.NovaTech440ATab',
+    runviewer_parser='naqs_devices.NovaTechDDS.runviewer_parsers.NovaTech440AParser')

@@ -28,5 +28,5 @@ class PulseBlasterESRPro300Tab(Pulseblaster_No_DDS_Tab):
     # Capabilities
     num_DO = 24
     def __init__(self,*args,**kwargs):
-        self.device_worker_class = "naqs_devices_new.PulseBlasterESRPro300.blacs_worker.PulseBlasterESRPro300Worker"
+        self.device_worker_class = "naqs_devices.PulseBlasterESRPro300.blacs_workers.PulseBlasterESRPro300Worker"
         Pulseblaster_No_DDS_Tab.__init__(self,*args,**kwargs)    

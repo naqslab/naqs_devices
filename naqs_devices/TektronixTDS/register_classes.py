@@ -14,5 +14,5 @@ import labscript_devices
 
 labscript_devices.register_classes(
     'TDS_Scope',
-    BLACS_tab='naqs_devices.TektronixTDS.blacs_tab.TDS_ScopeTab',
+    BLACS_tab='naqs_devices.TektronixTDS.blacs_tabs.TDS_ScopeTab',
     runviewer_parser='')

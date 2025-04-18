@@ -10,13 +10,13 @@
 #                                                                   #
 #####################################################################
 import numpy as np
-from naqs_devices.VISA.blacs_worker import VISAWorker
+from naqs_devices.VISA.blacs_workers import VISAWorker
 from labscript import LabscriptError
 
 import labscript_utils.h5_lock, h5py
 
 # import sensitivity and tau settings from labscript device
-from naqs_devices.SR865.labscript_device import sens, tau
+from naqs_devices.SR865.labscript_devices import sens, tau
 
 class SR865Worker(VISAWorker):
     program_string = 'OFLT {:d};SCAL {:d};PHAS {:.6f}'

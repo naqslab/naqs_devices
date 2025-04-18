@@ -11,19 +11,19 @@ should be simple to implement.
 Detailed Documentation
 ----------------------
 
-.. automodule:: naqs_devices.KeysightXSeries.labscript_device
+.. automodule:: naqs_devices.KeysightXSeries.labscript_devices
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqs_devices.KeysightXSeries.blacs_tab
+.. automodule:: naqs_devices.KeysightXSeries.blacs_tabs
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqs_devices.KeysightXSeries.blacs_worker
+.. automodule:: naqs_devices.KeysightXSeries.blacs_workers
    :members:
    :undoc-members:
    :show-inheritance:

@@ -9,7 +9,7 @@
 #                                                                   #
 #                                                                   #
 #####################################################################
-from naqs_devices.VISA.blacs_tab import VISATab 
+from naqs_devices.VISA.blacs_tabs import VISATab 
 
 
 class TDS_ScopeTab(VISATab):
@@ -26,7 +26,7 @@ class TDS_ScopeTab(VISATab):
     
     def __init__(self,*args,**kwargs):
         if not hasattr(self,'device_worker_class'):
-            self.device_worker_class = 'naqs_devices.TektronixTDS.blacs_worker.TDS_ScopeWorker'
+            self.device_worker_class = 'naqs_devices.TektronixTDS.blacs_workers.TDS_ScopeWorker'
         VISATab.__init__(self,*args,**kwargs)
     
     def initialise_GUI(self):

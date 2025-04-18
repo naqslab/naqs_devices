@@ -9,7 +9,7 @@
 #                                                                   #
 #                                                                   #
 #####################################################################
-from naqs_devices.VISA.blacs_tab import VISATab
+from naqs_devices.VISA.blacs_tabs import VISATab
 
 from blacs.tab_base_classes import define_state
 from blacs.tab_base_classes import MODE_MANUAL, MODE_TRANSITION_TO_BUFFERED, MODE_TRANSITION_TO_MANUAL, MODE_BUFFERED 
@@ -28,7 +28,7 @@ class SR865Tab(VISATab):
     
     def __init__(self,*args,**kwargs):
         # set the worker
-        self.device_worker_class = 'naqs_devices.SR865.blacs_worker.SR865Worker'
+        self.device_worker_class = 'naqs_devices.SR865.blacs_workers.SR865Worker'
         VISATab.__init__(self,*args,**kwargs)
     
     def initialise_GUI(self):

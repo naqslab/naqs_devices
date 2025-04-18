@@ -18,6 +18,6 @@ import labscript_devices
 
 labscript_devices.register_classes(
     'VISA',
-    BLACS_tab='naqs_devices.VISA.blacs_tab.VISATab',
+    BLACS_tab='naqs_devices.VISA.blacs_tabs.VISATab',
     runviewer_parser=''
 )

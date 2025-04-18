@@ -17,7 +17,7 @@ import labscript_devices
 # Mock Signal Generator Class for testing
 labscript_devices.register_classes(
     'SignalGenerator',
-    BLACS_tab='naqs_devices.SignalGenerator.blacs_tab.SignalGeneratorTab',
+    BLACS_tab='naqs_devices.SignalGenerator.blacs_tabs.SignalGeneratorTab',
     runviewer_parser='')
 
 labscript_devices.register_classes(

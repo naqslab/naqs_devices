@@ -10,9 +10,9 @@ communication protocol.
 
 .. autosummary::
 	 naqs_devices.SignalGenerator.Models
-	 naqs_devices.SignalGenerator.blacs_tab
-	 naqs_devices.SignalGenerator.blacs_worker
-	 naqs_devices.SignalGenerator.labscript_device
+	 naqs_devices.SignalGenerator.blacs_tabs
+	 naqs_devices.SignalGenerator.blacs_workers
+	 naqs_devices.SignalGenerator.labscript_devices
 	 naqs_devices.SignalGenerator.register_classes
 
 Models
@@ -36,13 +36,13 @@ Adding a Signal Generator
 
 In order to add a new model of signal generator one must:
 
-#. Add a subclass :obj:`SignalGenerator.labscript_device` in :obj:`SignalGenerator.Models` 
+#. Add a subclass :obj:`SignalGenerator.labscript_devices` in :obj:`SignalGenerator.Models` 
    which provides the operational limits. 
-#. Subclass :obj:`SignalGenerator.blacs_tab`
-   and :obj:`SignalGenerator.blacs_worker` with the operational details for communicating
+#. Subclass :obj:`SignalGenerator.blacs_tabs`
+   and :obj:`SignalGenerator.blacs_workers` with the operational details for communicating
    with the device (namely command syntax and status byte definitions). 
 #. Add an entry in :obj:`SignalGenerator.register_classes` that links the labscript_device to 
-   the correct blacs_tab. Note that multiple labscript_devices can use the same blacs_tab/blacs_worker. 
+   the correct blacs_tabs. Note that multiple labscript_devices can use the same blacs_tabs/blacs_workers. 
 
 Detailed Documentation
 ----------------------
@@ -92,19 +92,19 @@ Detailed Documentation
    :show-inheritance:
 
 
-.. automodule:: naqs_devices.SignalGenerator.blacs_tab
+.. automodule:: naqs_devices.SignalGenerator.blacs_tabs
    :members:
    :undoc-members:
    :show-inheritance:
 
 
-.. automodule:: naqs_devices.SignalGenerator.blacs_worker
+.. automodule:: naqs_devices.SignalGenerator.blacs_workers
    :members:
    :undoc-members:
    :show-inheritance:
 
 
-.. automodule:: naqs_devices.SignalGenerator.labscript_device
+.. automodule:: naqs_devices.SignalGenerator.labscript_devices
    :members:
    :undoc-members:
    :show-inheritance:
