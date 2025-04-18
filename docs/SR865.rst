@@ -1,0 +1,34 @@
+SR865
+=====
+
+Overview
+--------
+
+This device class controls the Stanford Research Systems 865 series Lock-in Amplifier.
+It only implements control functions. Data acquisition is not directly supported at this time.
+To get buffered data, please use a DAQ connected to the analog outputs of the 865.
+
+Detailed Documentation
+----------------------
+
+.. automodule:: naqslab_devices_new.SR865.labscript_device
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+   
+.. automodule:: naqslab_devices_new.SR865.blacs_tab
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+   
+.. automodule:: naqslab_devices_new.SR865.blacs_worker
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   
+.. automodule:: naqslab_devices_new.SR865.register_classes
+   :members:
+   :undoc-members:
+   :show-inheritance:
