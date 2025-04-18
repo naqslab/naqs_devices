@@ -11,24 +11,24 @@ To get buffered data, please use a DAQ connected to the analog outputs of the 86
 Detailed Documentation
 ----------------------
 
-.. automodule:: naqslab_devices_new.SR865.labscript_device
+.. automodule:: naqs_devices.SR865.labscript_device
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqslab_devices_new.SR865.blacs_tab
+.. automodule:: naqs_devices.SR865.blacs_tab
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqslab_devices_new.SR865.blacs_worker
+.. automodule:: naqs_devices.SR865.blacs_worker
    :members:
    :undoc-members:
    :show-inheritance:
    
-.. automodule:: naqslab_devices_new.SR865.register_classes
+.. automodule:: naqs_devices.SR865.register_classes
    :members:
    :undoc-members:
    :show-inheritance:

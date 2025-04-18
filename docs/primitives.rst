@@ -4,7 +4,7 @@
 Overview
 --------
 
-.. currentmodule:: naqslab_devices_new
+.. currentmodule:: naqs_devices
 
 These are subclasses of labscript primitive objects for specific use with the devices in this module.
 
@@ -21,5 +21,5 @@ These are subclasses of labscript primitive objects for specific use with the de
 Detailed Documentation
 ----------------------
 
-.. automodule:: naqslab_devices_new
+.. automodule:: naqs_devices
 	:members: StaticFreqAmp, ScopeChannel, CounterScopeChannel

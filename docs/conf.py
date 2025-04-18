@@ -17,12 +17,12 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'naqslab_devices_new'
+project = 'naqs_devices'
 copyright = '2019, dihm'
 author = 'dihm'
 
 # The full version, including alpha/beta/rc tags
-from naqslab_devices_new import __version__
+from naqs_devices import __version__
 # short version
 version = __version__
 # long version

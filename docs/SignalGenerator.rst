@@ -9,18 +9,18 @@ use the IEEE 488 or SCPI command protocols. Device communication is handled usin
 communication protocol.
 
 .. autosummary::
-	 naqslab_devices_new.SignalGenerator.Models
-	 naqslab_devices_new.SignalGenerator.blacs_tab
-	 naqslab_devices_new.SignalGenerator.blacs_worker
-	 naqslab_devices_new.SignalGenerator.labscript_device
-	 naqslab_devices_new.SignalGenerator.register_classes
+	 naqs_devices.SignalGenerator.Models
+	 naqs_devices.SignalGenerator.blacs_tab
+	 naqs_devices.SignalGenerator.blacs_worker
+	 naqs_devices.SignalGenerator.labscript_device
+	 naqs_devices.SignalGenerator.register_classes
 
 Models
 ------
 
 Currently covered models include:
 
-.. currentmodule:: naqslab_devices_new.SignalGenerator.BLACS
+.. currentmodule:: naqs_devices.SignalGenerator.BLACS
 
 .. autosummary::
 	 HP_8642A
@@ -47,70 +47,70 @@ In order to add a new model of signal generator one must:
 Detailed Documentation
 ----------------------
 
-.. automodule:: naqslab_devices_new.SignalGenerator.BLACS.HP_8642A
+.. automodule:: naqs_devices.SignalGenerator.BLACS.HP_8642A
    :members:
    :undoc-members:
    :show-inheritance:
 
 
-.. automodule:: naqslab_devices_new.SignalGenerator.BLACS.HP_8643A
+.. automodule:: naqs_devices.SignalGenerator.BLACS.HP_8643A
    :members:
    :undoc-members:
    :show-inheritance:
 
 
-.. automodule:: naqslab_devices_new.SignalGenerator.BLACS.HP_8648
+.. automodule:: naqs_devices.SignalGenerator.BLACS.HP_8648
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: naqslab_devices_new.SignalGenerator.BLACS.RS_SMA100B
+.. automodule:: naqs_devices.SignalGenerator.BLACS.RS_SMA100B
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: naqslab_devices_new.SignalGenerator.BLACS.RS_SMF100A
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-
-.. automodule:: naqslab_devices_new.SignalGenerator.BLACS.RS_SMHU
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-.. automodule:: naqslab_devices_new.SignalGenerator.BLACS.KeysightSigGens
+.. automodule:: naqs_devices.SignalGenerator.BLACS.RS_SMF100A
    :members:
    :undoc-members:
    :show-inheritance:
 
 
-.. automodule:: naqslab_devices_new.SignalGenerator.Models
+.. automodule:: naqs_devices.SignalGenerator.BLACS.RS_SMHU
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: naqs_devices.SignalGenerator.BLACS.KeysightSigGens
    :members:
    :undoc-members:
    :show-inheritance:
 
 
-.. automodule:: naqslab_devices_new.SignalGenerator.blacs_tab
+.. automodule:: naqs_devices.SignalGenerator.Models
    :members:
    :undoc-members:
    :show-inheritance:
 
 
-.. automodule:: naqslab_devices_new.SignalGenerator.blacs_worker
+.. automodule:: naqs_devices.SignalGenerator.blacs_tab
    :members:
    :undoc-members:
    :show-inheritance:
 
 
-.. automodule:: naqslab_devices_new.SignalGenerator.labscript_device
+.. automodule:: naqs_devices.SignalGenerator.blacs_worker
    :members:
    :undoc-members:
    :show-inheritance:
 
 
-.. automodule:: naqslab_devices_new.SignalGenerator.register_classes
+.. automodule:: naqs_devices.SignalGenerator.labscript_device
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+.. automodule:: naqs_devices.SignalGenerator.register_classes
    :members:
    :undoc-members:
    :show-inheritance:

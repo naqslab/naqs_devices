@@ -11,24 +11,24 @@ Note that the 409B-AC class is largely interchangable with the DDS9m labscript_d
 Detailed Documentation
 ----------------------
 
-.. automodule:: naqslab_devices_new.NovaTechDDS.labscript_device
+.. automodule:: naqs_devices.NovaTechDDS.labscript_device
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqslab_devices_new.NovaTechDDS.blacs_tab
+.. automodule:: naqs_devices.NovaTechDDS.blacs_tab
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqslab_devices_new.NovaTechDDS.blacs_worker
+.. automodule:: naqs_devices.NovaTechDDS.blacs_worker
    :members:
    :undoc-members:
    :show-inheritance:
    
-.. automodule:: naqslab_devices_new.NovaTechDDS.register_classes
+.. automodule:: naqs_devices.NovaTechDDS.register_classes
    :members:
    :undoc-members:
    :show-inheritance:

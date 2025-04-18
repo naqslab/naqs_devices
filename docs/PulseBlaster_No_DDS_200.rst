@@ -10,24 +10,24 @@ configures the correct clock speed and clock resolution limits for our custom 20
 Detailed Documentation
 ----------------------
 
-.. automodule:: naqslab_devices_new.PulseBlaster_No_DDS_200.labscript_device
+.. automodule:: naqs_devices.PulseBlaster_No_DDS_200.labscript_device
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqslab_devices_new.PulseBlaster_No_DDS_200.blacs_tab
+.. automodule:: naqs_devices.PulseBlaster_No_DDS_200.blacs_tab
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqslab_devices_new.PulseBlaster_No_DDS_200.blacs_worker
+.. automodule:: naqs_devices.PulseBlaster_No_DDS_200.blacs_worker
    :members:
    :undoc-members:
    :show-inheritance:
    
-.. automodule:: naqslab_devices_new.PulseBlaster_No_DDS_200.register_classes
+.. automodule:: naqs_devices.PulseBlaster_No_DDS_200.register_classes
    :members:
    :undoc-members:
    :show-inheritance:

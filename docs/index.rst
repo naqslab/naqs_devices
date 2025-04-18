@@ -1,9 +1,9 @@
-.. naqslab_devices documentation master file, created by
+.. naqs_devices documentation master file, created by
    sphinx-quickstart on Fri Sep  6 14:11:37 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to naqslab_devices's documentation!
+Welcome to naqs_devices's documentation!
 ===========================================
 
 This library is a collection of third-party devices for the labscript_suite experimental control system.

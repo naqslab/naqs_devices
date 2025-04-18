@@ -11,24 +11,24 @@ all devices that use the VISA communication library. It relies on the
 Detailed Documentation
 ----------------------
 
-.. automodule:: naqslab_devices_new.VISA.labscript_device
+.. automodule:: naqs_devices.VISA.labscript_device
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqslab_devices_new.VISA.blacs_tab
+.. automodule:: naqs_devices.VISA.blacs_tab
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqslab_devices_new.VISA.blacs_worker
+.. automodule:: naqs_devices.VISA.blacs_worker
    :members:
    :undoc-members:
    :show-inheritance:
    
-.. automodule:: naqslab_devices_new.VISA.register_classes
+.. automodule:: naqs_devices.VISA.register_classes
    :members:
    :undoc-members:
    :show-inheritance:

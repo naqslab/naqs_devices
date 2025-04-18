@@ -62,4 +62,4 @@ files where appropriate in the documenation. The include statement is of the for
 
 .. code:: rst
 	
-	.. include:: _apidoc\naqslab_devices.NovaTechDDS.inc
+	.. include:: _apidoc\naqs_devices.NovaTechDDS.inc

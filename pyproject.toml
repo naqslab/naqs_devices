@@ -2,7 +2,6 @@
 requires = ["setuptools>=64", "wheel", "setuptools_scm>=8"]
 build-backend = "setuptools.build_meta"
 
-
 [tool.setuptools_scm]
 version_scheme = "release-branch-semver"
 local_scheme = "no-local-version"
@@ -12,19 +11,12 @@ zip-safe = false
 include-package-data = true
 
 [project]
-name = "naqslab_devices_new"
-# version = "0.5.0"
+name = "naqs_devices"
 description = "Collection of 3rd party devices for the labscript suite experimental control system"
 authors = [{name = "naqslab", email = "naqslab@gmail.com"}]
 dynamic = ["version"]
 license = "BSD-2-Clause"
-dependencies = []  # Add any runtime dependencies here
-
-# [tool.setuptools.packages.find]
-# include = ["naqslab_devices.*"]
+dependencies = [] # TODO
 
 [tool.setuptools.package-dir]
-"naqslab_devices_new" = "./naqslab_devices_new"
-
-# [tool.setuptools.packages]
-# find = {namespaces = true}
+"naqs_devices" = "./naqs_devices"

@@ -11,24 +11,24 @@ should be simple to implement.
 Detailed Documentation
 ----------------------
 
-.. automodule:: naqslab_devices_new.KeysightXSeries.labscript_device
+.. automodule:: naqs_devices.KeysightXSeries.labscript_device
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqslab_devices_new.KeysightXSeries.blacs_tab
+.. automodule:: naqs_devices.KeysightXSeries.blacs_tab
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqslab_devices_new.KeysightXSeries.blacs_worker
+.. automodule:: naqs_devices.KeysightXSeries.blacs_worker
    :members:
    :undoc-members:
    :show-inheritance:
    
-.. automodule:: naqslab_devices_new.KeysightXSeries.register_classes
+.. automodule:: naqs_devices.KeysightXSeries.register_classes
    :members:
    :undoc-members:
    :show-inheritance:

@@ -10,24 +10,24 @@ configures the correct clock speed, digital output number, and clock resolution 
 Detailed Documentation
 ----------------------
 
-.. automodule:: naqslab_devices_new.PulseBlasterESRPro300.labscript_device
+.. automodule:: naqs_devices.PulseBlasterESRPro300.labscript_device
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqslab_devices_new.PulseBlasterESRPro300.blacs_tab
+.. automodule:: naqs_devices.PulseBlasterESRPro300.blacs_tab
    :members:
    :undoc-members:
    :show-inheritance:
 
    
-.. automodule:: naqslab_devices_new.PulseBlasterESRPro300.blacs_worker
+.. automodule:: naqs_devices.PulseBlasterESRPro300.blacs_worker
    :members:
    :undoc-members:
    :show-inheritance:
    
-.. automodule:: naqslab_devices_new.PulseBlasterESRPro300.register_classes
+.. automodule:: naqs_devices.PulseBlasterESRPro300.register_classes
    :members:
    :undoc-members:
    :show-inheritance:

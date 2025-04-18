@@ -1,7 +1,7 @@
-# README #
+# naqs_devices (previously naqslab_devices) #
 
 This repository contains various 3rd-party device implementations for use with
-the python-based [labscript suite](labscriptsuite.org/)
+the python-based [labscript suite](https://labscriptsuite.org/en/latest/)
 experiment control system.
 
 Devices include:
@@ -26,14 +26,14 @@ models, particularly oscilloscopes and CW Signal Generators.
 
 ## How do I get set up? ##
 
-Clone this repository into the labscript suite directory.
+Clone this repository into your workspace. It does not necessarily need to be in the labscript suite directory.
 
 ### Valid since labscript\_devices version 2.6.0 ###
 
 Add the following line to the labconfig.ini file under the `[DEFAULT]` section.
 
 ```text
-user_devices = naqslab_devices
+user_devices = naqs_devices
 ```
 
 Note that previously it was required to place this repository in the `userlib` directory in your labscript install, but now this repository can be anywhere.
@@ -48,7 +48,7 @@ After adding the above, navigate to where you have placed this directory and:
 conda activate labscript
 ```
 
-* Install `naqslab_devices_new` as a namespace package:
+* Install `naqs_devices` as a namespace package:
 
 ```bash
 pip install -e .
@@ -59,8 +59,8 @@ pip install -e .
 Invoke in labscript scripts like other labscript\_devices
 
 ```python
-from naqslab_devices import ScopeChannel
-from naqslab_devices.KeysightXSeries.labscript_device import KeysightXScope
+from naqs_devices import ScopeChannel
+from naqs_devices.KeysightXSeries.labscript_device import KeysightXScope
 ```
 
 Usage of individual devices varies somewhat.
@@ -69,13 +69,13 @@ labscript_devices > 2.2.0.
 
 ```python
 from labscript import *
-from naqslab_devices.PulseBlasterESRPro300.labscript_device import PulseBlasterESRPro300
-from naqslab_devices.NovaTechDDS.labscript_device import NovaTech409B, NovaTech409B_AC, NovaTech440A
+from naqs_devices.PulseBlasterESRPro300.labscript_device import PulseBlasterESRPro300
+from naqs_devices.NovaTechDDS.labscript_device import NovaTech409B, NovaTech409B_AC, NovaTech440A
 from labscript_devices.NI_DAQmx import NI_DAQmx
-from naqslab_devices.SignalGenerator.Models import RS_SMF100A, RS_SMHU
-from naqslab_devices.SR865.labscript_device import SR865
-from naqslab_devices import ScopeChannel, StaticFreqAmp
-from naqslab_devices.KeysightXSeries.labscript_device import KeysightXScope
+from naqs_devices.SignalGenerator.Models import RS_SMF100A, RS_SMHU
+from naqs_devices.SR865.labscript_device import SR865
+from naqs_devices import ScopeChannel, StaticFreqAmp
+from naqs_devices.KeysightXSeries.labscript_device import KeysightXScope
 
 PulseBlasterESRPro300(name='pulseblaster_0', board_number=0, programming_scheme='pb_start/BRANCH')
 ClockLine(name='pulseblaster_0_clockline_fast', pseudoclock=pulseblaster_0.pseudoclock, connection='flag 0')
