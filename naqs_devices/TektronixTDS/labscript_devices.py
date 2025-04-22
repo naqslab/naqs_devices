@@ -10,7 +10,7 @@
 #                                                                   #
 #####################################################################
 from labscript import TriggerableDevice, config, LabscriptError, set_passed_properties
-from naqs_devices import ScopeChannel
+from naqs_devices.Helpers import ScopeChannel
 
 __version__ = '0.1.0'
 __author__ = ['dihm']

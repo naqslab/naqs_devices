@@ -15,7 +15,7 @@ from naqs_devices.VISA.labscript_devices import VISA
 from labscript import LabscriptError, set_passed_properties, config
 from labscript_utils import dedent
 
-from naqs_devices import StaticFreqAmp
+from naqs_devices.Helpers import StaticFreqAmp
 
 __version__ = '0.2.0'
 __author__ = ['dihm']

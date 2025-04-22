@@ -22,7 +22,7 @@ copyright = '2019, dihm'
 author = 'dihm'
 
 # The full version, including alpha/beta/rc tags
-from naqs_devices import __version__
+from naqs_devices.Helpers import __version__
 # short version
 version = __version__
 # long version

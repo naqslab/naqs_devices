@@ -11,7 +11,7 @@
 #####################################################################
 import numpy as np
 
-from naqs_devices import ScopeChannel, CounterScopeChannel
+from naqs_devices.Helpers import ScopeChannel, CounterScopeChannel
 from labscript import Device, TriggerableDevice, config, LabscriptError, set_passed_properties
 
 __version__ = '0.1.0'
