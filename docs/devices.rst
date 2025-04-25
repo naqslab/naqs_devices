@@ -35,4 +35,3 @@ Supported Devices:
 .. toctree::
 	:maxdepth: 3
 
-	TemplateDevice.rst
