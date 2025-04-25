@@ -21,10 +21,13 @@ project = 'naqs_devices'
 copyright = '2019, dihm'
 author = 'dihm'
 
-# The full version, including alpha/beta/rc tags
-from naqs_devices.Helpers import __version__
-# short version
-version = __version__
+# # The full version, including alpha/beta/rc tags
+# from naqs_devices import __version__
+# # short version
+# version = __version__
+
+## hardcoding version
+version = '0.1.0'
 # long version
 release = version
 
@@ -62,8 +65,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
+# source_suffix = '.rst'
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'

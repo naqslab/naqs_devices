@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to naqs_devices's documentation!
-===========================================
+========================================
 
 This library is a collection of third-party devices for the labscript_suite experimental control system.
 
@@ -28,8 +28,7 @@ Credits
 =======
 
 :Authors:
-	David Meyer
-	Zac Castillo
+	David Meyer, Zac Castillo, Jason Pruitt
 
 :Licence: Simplified BSD License
 

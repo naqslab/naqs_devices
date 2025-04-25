@@ -3,7 +3,7 @@ Building Documentation
 
 The API documentation for this library leverages the 
 `Sphinx <http://www.sphinx-doc.org/en/master/index.html>`_ automatic python documenation generator.
-The general structure is to use the :std:doc:`Sphinx-apidoc<sphinx:man/sphinx-apidoc>` infrastucture to read
+The general structure is to use the `autosummary <https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html>`_ extension to read
 source code docstrings to automatically build the function/class reference documentation for each device.
 Hand-written ReStructedText files (`quick syntax guide <https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html>`_) 
 are then used to provide high-level documentation that imports
