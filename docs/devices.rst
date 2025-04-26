@@ -1,9 +1,7 @@
-
-
 Devices
 =======
 
-Directory of all device classes in this repository. 
+Directory of all device classes that can be installed within this namespace.
 
 .. The labscript primitive subclasses are derivatives of the labscript-provided 
 .. children classes used by devices in this repository. 
@@ -29,9 +27,46 @@ Directory of all device classes in this repository.
 .. by setting them manually at the device front panel without the device class 
 .. interfering.
 
-Supported Devices:
-==================
 
-.. toctree::
-	:maxdepth: 3
+Templates
+---------
+
+These components are not meant to be used directly,
+but provide templates for creating new devices.
+Some are designed to be inherited to provide basic functionality.
+
+* `TemplateDevice <https://naqs-devices.readthedocs.io/projects/template_device/en/latest/>`_
+* VISA
+
+Frequency Synthesis
+-------------------
+
+* NovaTechDDS
+* SignalGenerator
+
+Oscilloscopes
+-------------
+
+* KeysightXSeries
+* TektronixTDS
+
+Thin Subclasses
+---------------
+
+These are thin subclasses of standard labscript devices
+that enforce specific device limitations for particular submodels.
+
+* PulseBlaster_No_DDS_200
+* PulseBlasterESRPro300
+
+DC Power Supplies
+-----------------
+
+* KeysightDCSupply
+
+Lock-in Amplifiers
+------------------
+
+* SR865
+
 
