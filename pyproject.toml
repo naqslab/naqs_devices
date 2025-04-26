@@ -21,7 +21,7 @@ dynamic = ["version"]
 license = {file = 'LICENSE.txt'}
 dependencies = [
     "blacs>=3.2.0",
-    "runmanager>=3.2.0",
+    "labscript_devices>=3.2.0",
     "labscript>=3.3.0",
     "labscript_utils>=3.3.0",
 ]
