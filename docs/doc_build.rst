@@ -6,8 +6,8 @@ The API documentation for this library leverages the
 The general structure is to use the `autosummary <https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html>`_ extension to read
 source code docstrings to automatically build the function/class reference documentation for each device.
 Hand-written ReStructedText files (`quick syntax guide <https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html>`_) 
-are then used to provide high-level documentation that imports
-the auto-generated documentation. A makefile is provided to run the correct ``apidoc`` and
+are then used to provide high-level documentation that imports the 
+auto-generated documentation. A makefile is provided to run the correct
 ``sphinx-build`` commands.
 
 Sphinx Environment
@@ -30,19 +30,9 @@ Sphinx Build
 ------------
 
 The documentation build is automated through makefiles. All commands are run from
-the :file:`doc` subfolder.
-
-The automated documentation build is perfomed using
-
-.. code-block:: bash
-	
-	make apidoc
-
-The auto-generated files are placed in the :file:`_apidoc` subfolder of :file:`doc`
-and are given the import name of the module with the file suffix ``.inc``.
-
-The complete documentation is built using ``sphinx-build`` and currently supports
-two targets: html and latexpdf. They are run using 
+the :file:`doc` subfolder. The complete documentation is built using 
+``sphinx-build`` and currently supports two targets: html and latexpdf. They 
+are run using 
 
 .. code-block:: bash
 	
@@ -62,4 +52,7 @@ files where appropriate in the documenation. The include statement is of the for
 
 .. code:: rst
 	
-	.. include:: _apidoc\naqs_devices.NovaTechDDS.inc
+	.. automodule:: naqs_devices.KeysightDCSupply.labscript_devices
+		:members:
+		:undoc-members:
+		:show-inheritance:

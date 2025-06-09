@@ -19,7 +19,6 @@ Usage
 
 Invoke in labscript scripts just like other labscript devices::
 
-	from naqs_devices import ScopeChannel
 	from naqs_devices.KeysightXSeries.labscript_device import KeysightXScope
 
 Details for how to use each device are contained in the :doc:`detailed documentation <devices>` listings.

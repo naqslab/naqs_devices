@@ -26,7 +26,8 @@ models, particularly oscilloscopes and CW Signal Generators.
 
 ## How do I get set up? ##
 
-Clone this repository into your workspace. It does not necessarily need to be in the labscript suite directory.
+Clone this repository into your workspace.
+It does not necessarily need to be in the labscript suite directory.
 
 ### Valid since labscript\_devices version 2.6.0 ###
 
@@ -36,11 +37,12 @@ Add the following line to the labconfig.ini file under the `[DEFAULT]` section.
 user_devices = naqs_devices
 ```
 
-Note that previously it was required to place this repository in the `userlib` directory in your labscript install, but now this repository can be anywhere.
+Note that previously it was required to place this repository in the `userlib`
+directory in your labscript install, but now this repository can be anywhere.
 
 ### Installation ###
 
-After adding the above, navigate to where you have placed this directory and:
+After adding the above, navigate to this directory and:
 
 * Ensure you are in your labscript environment
 
@@ -48,10 +50,28 @@ After adding the above, navigate to where you have placed this directory and:
 conda activate labscript
 ```
 
-* Install `naqs_devices` as a namespace package:
+* Install each of your devices
+
+Navigate to your device's directory
 
 ```bash
-pip install -e .
+cd path/to/your/device/
+pip install .
+```
+
+* Then install `naqs_devices` as a namespace package:
+
+```bash
+cd path/to/naqs_devices/
+pip install .
+```
+
+If desired, `naqs_devices` can be installed in editable mode. In this case,
+install all devices in the `naqs_devices` namespace at the same time as the
+parent namespace:
+
+```bash
+pip install -e /path/to/device1 /path/to/device2 /path/to/naqs_devices
 ```
 
 #### Usage ####
