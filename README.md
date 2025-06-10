@@ -74,6 +74,30 @@ parent namespace:
 pip install -e /path/to/device1 /path/to/device2 /path/to/naqs_devices
 ```
 
+For convenience, here is an example repository setup and a copy+paste-able
+command:
+
+```bash
+#Assuming directory structure and windows powershell:
+DeviceCollection\naqs_devices*
+naqs_devices\
+```
+
+```powershell
+pip install -e `
+DeviceCollection\naqs_devices_KeysightDCSupply `
+DeviceCollection\naqs_devices_KeysightXSeries `
+DeviceCollection\naqs_devices_NovaTechDDS `
+DeviceCollection\naqs_devices_PulseBlaster_No_DDS_200 `
+DeviceCollection\naqs_devices_PulseBlasterESRPro300 `
+DeviceCollection\naqs_devices_SignalGenerator `
+DeviceCollection\naqs_devices_SR865 `
+DeviceCollection\naqs_devices_TektronixTDS `
+DeviceCollection\naqs_devices_template_device `
+DeviceCollection\naqs_devices_VISA `
+naqs_devices
+```
+
 #### Usage ####
 
 Invoke in labscript scripts like other labscript\_devices
