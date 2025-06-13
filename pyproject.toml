@@ -13,6 +13,9 @@ include-package-data = true
 [tool.setuptools.package-dir]
 "naqs_devices" = "./src/naqs_devices"
 
+[tool.setuptools.dynamic]
+version = {attr = "naqs_devices.__version__"}
+
 [project]
 name = "naqs_devices"
 description = "Collection of 3rd party devices for the labscript suite experimental control system"

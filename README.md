@@ -71,7 +71,7 @@ install all devices in the `naqs_devices` namespace at the same time as the
 parent namespace:
 
 ```bash
-pip install -e /path/to/device1 /path/to/device2 /path/to/naqs_devices
+pip install -e /path/to/device1 -e /path/to/device2 -e /path/to/naqs_devices
 ```
 
 For convenience, here is an example repository setup and a copy+paste-able
@@ -84,7 +84,7 @@ naqs_devices\
 ```
 
 ```powershell
-pip install -e `
+pip install `
 DeviceCollection\naqs_devices_KeysightDCSupply `
 DeviceCollection\naqs_devices_KeysightXSeries `
 DeviceCollection\naqs_devices_NovaTechDDS `
