@@ -36,7 +36,7 @@ but provide templates for creating new devices.
 Some are designed to be inherited to provide basic functionality.
 
 * `TemplateDevice <https://naqs-devices.readthedocs.io/projects/template_device/en/latest/>`_
-* VISA
+* `VISA <https://naqs-devices.readthedocs.io/projects/VISA/en/latest/>`_
 
 Frequency Synthesis
 -------------------
