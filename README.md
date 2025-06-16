@@ -95,7 +95,7 @@ DeviceCollection\naqs_devices_SR865 `
 DeviceCollection\naqs_devices_TektronixTDS `
 DeviceCollection\naqs_devices_template_device `
 DeviceCollection\naqs_devices_VISA `
-naqs_devices
+.\naqs_devices
 ```
 
 #### Usage ####
