@@ -4,32 +4,10 @@ This repository contains various 3rd-party device implementations for use with
 the python-based [labscript suite](https://labscriptsuite.org/en/latest/)
 experiment control system.
 
-Devices include:
-
-* Novatech 409B, 409B-AC, & 440A DDS
-* Stanford Research 865 Lockin Amplifier
-* Tektronix TDS series oscilloscopes
-* Keysight MSO/DSO X series oscilloscopes
-* Various CW RF Signal Generators
-  * Rohde & Schwarz SMF 100A
-  * Rohde & Schwarz SMA 100B
-  * Rohde & Schwarz SMHU
-  * HP 8642A
-  * HP 8643A
-  * HP 8648A/B/C/D
-  * Keysight E8257N
-  * Keysight/Agilent DC Power Supplies
-    * E364x series tested
-
-The above code is designed to be modular allowing for easy addition of other
-models, particularly oscilloscopes and CW Signal Generators.
+Supported devices are listed on naqs_device's
+[RTD Page](https://naqs-devices.readthedocs.io/en/latest/devices/).
 
 ## How do I get set up? ##
-
-Clone this repository into your workspace.
-It does not necessarily need to be in the labscript suite directory.
-
-### Valid since labscript\_devices version 2.6.0 ###
 
 Add the following line to the labconfig.ini file under the `[DEFAULT]` section.
 
@@ -37,53 +15,42 @@ Add the following line to the labconfig.ini file under the `[DEFAULT]` section.
 user_devices = naqs_devices
 ```
 
-Note that previously it was required to place this repository in the `userlib`
-directory in your labscript install, but now this repository can be anywhere.
-
-### Installation ###
-
-After adding the above, navigate to this directory and:
-
-* Ensure you are in your labscript environment
+### Ensure you are in your labscript environment ###
 
 ```bash
 conda activate labscript
 ```
 
-* Install each of your devices
+### Install each of your devices via ###
 
-Navigate to your device's directory
+### A) Either referenced directly from published github repositories ###
 
 ```bash
-cd path/to/your/device/
-pip install .
+pip install `
+git+https://github.com/naqslab/naqs_devices_KeysightDCSupply.git `
+git+https://github.com/naqslab/naqs_devices_KeysightXSeries.git `
+git+https://github.com/naqslab/naqs_devices_NovaTechDDS.git `
+git+https://github.com/naqslab/naqs_devices_PulseBlaster_No_DDS_200.git `
+git+https://github.com/naqslab/naqs_devices_PulseBlasterESRPro300.git `
+git+https://github.com/naqslab/naqs_devices_SignalGenerator.git `
+git+https://github.com/naqslab/naqs_devices_SR865.git `
+git+https://github.com/naqslab/naqs_devices_TektronixTDS.git `
+git+https://github.com/naqslab/naqs_devices_template_device.git `
+git+https://github.com/naqslab/naqs_devices_VISA.git `
+git+https://github.com/naqslab/naqs_devices.git
 ```
 
-* Then install `naqs_devices` as a namespace package:
+### B) Or installing from local git repositories ####
+
+Here is an example directory setup and a copy+paste-able command for
+powershell:
 
 ```bash
-cd path/to/naqs_devices/
-pip install .
-```
-
-If desired, `naqs_devices` can be installed in editable mode. In this case,
-install all devices in the `naqs_devices` namespace at the same time as the
-parent namespace:
-
-```bash
-pip install -e /path/to/device1 -e /path/to/device2 -e /path/to/naqs_devices
-```
-
-For convenience, here is an example repository setup and a copy+paste-able
-command:
-
-```bash
-#Assuming directory structure and windows powershell:
 DeviceCollection\naqs_devices*
 naqs_devices\
 ```
 
-```powershell
+```bash
 pip install `
 DeviceCollection\naqs_devices_KeysightDCSupply `
 DeviceCollection\naqs_devices_KeysightXSeries `
@@ -98,28 +65,46 @@ DeviceCollection\naqs_devices_VISA `
 .\naqs_devices
 ```
 
-#### Usage ####
+where the backticks are newlines in powershell.
+
+If desired, `naqs_devices` can be installed in editable mode. In this case,
+be sure to install all devices in the `naqs_devices` namespace at the same time
+as the parent namespace:
+
+```bash
+pip install `
+-e DeviceCollection\naqs_devices_KeysightDCSupply `
+-e DeviceCollection\naqs_devices_KeysightXSeries `
+-e DeviceCollection\naqs_devices_NovaTechDDS `
+-e DeviceCollection\naqs_devices_PulseBlaster_No_DDS_200 `
+-e DeviceCollection\naqs_devices_PulseBlasterESRPro300 `
+-e DeviceCollection\naqs_devices_SignalGenerator `
+-e DeviceCollection\naqs_devices_SR865 `
+-e DeviceCollection\naqs_devices_TektronixTDS `
+-e DeviceCollection\naqs_devices_template_device `
+-e DeviceCollection\naqs_devices_VISA `
+-e .\naqs_devices
+```
+
+## Usage ##
 
 Invoke in labscript scripts like other labscript\_devices
 
 ```python
-from naqs_devices import ScopeChannel
-from naqs_devices.KeysightXSeries.labscript_device import KeysightXScope
+from naqs_devices.KeysightXSeries.labscript_device import KeysightXScope, ScopeChannel
 ```
 
 Usage of individual devices varies somewhat.
-Here is an example connectiontable showing some of their instantiation with
-labscript_devices > 2.2.0.
+Here is an example connectiontable showing some of their instantiation:
 
 ```python
 from labscript import *
 from naqs_devices.PulseBlasterESRPro300.labscript_device import PulseBlasterESRPro300
-from naqs_devices.NovaTechDDS.labscript_device import NovaTech409B, NovaTech409B_AC, NovaTech440A
+from naqs_devices.NovaTechDDS.labscript_device import NovaTech409B, NovaTech409B_AC, NovaTech440A, StaticFreqAmp
 from labscript_devices.NI_DAQmx import NI_DAQmx
 from naqs_devices.SignalGenerator.Models import RS_SMF100A, RS_SMHU
 from naqs_devices.SR865.labscript_device import SR865
-from naqs_devices import ScopeChannel, StaticFreqAmp
-from naqs_devices.KeysightXSeries.labscript_device import KeysightXScope
+from naqs_devices.KeysightXSeries.labscript_device import KeysightXScope, ScopeChannel
 
 PulseBlasterESRPro300(name='pulseblaster_0', board_number=0, programming_scheme='pb_start/BRANCH')
 ClockLine(name='pulseblaster_0_clockline_fast', pseudoclock=pulseblaster_0.pseudoclock, connection='flag 0')
@@ -221,7 +206,7 @@ start()
 stop(1)
 ```
 
-### Contribution guidelines ###
+## Contribution guidelines ##
 
 * Submitted code should follow labscript\_suite style and guidelines
 * Submitted code should also be backwards compatible where possible
