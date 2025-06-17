@@ -41,14 +41,14 @@ Some are designed to be inherited to provide basic functionality.
 Frequency Synthesis
 -------------------
 
-* NovaTechDDS
-* SignalGenerator
+* `NovaTechDDS <https://naqs-devices.readthedocs.io/projects/NovaTechDDS/en/latest/>`_
+* `SignalGenerator <https://naqs-devices.readthedocs.io/projects/SignalGenerator/en/latest/>`_
 
 Oscilloscopes
 -------------
 
-* KeysightXSeries
-* TektronixTDS
+* `KeysightXSeries <https://naqs-devices.readthedocs.io/projects/KeysightXSeries/en/latest/>`_
+* `TektronixTDS <https://naqs-devices.readthedocs.io/projects/TektronixTDS/en/latest/>`_
 
 Thin Subclasses
 ---------------
@@ -56,17 +56,17 @@ Thin Subclasses
 These are thin subclasses of standard labscript devices
 that enforce specific device limitations for particular submodels.
 
-* PulseBlaster_No_DDS_200
-* PulseBlasterESRPro300
+* `PulseBlaster_No_DDS_200 <https://naqs-devices.readthedocs.io/projects/PulseBlaster_No_DDS_200/en/latest/>`_
+* `PulseBlasterESRPro300 <https://naqs-devices.readthedocs.io/projects/PulseBlasterESRPro300/en/latest/>`_
 
 DC Power Supplies
 -----------------
 
-* KeysightDCSupply
+* `KeysightDCSupply <https://naqs-devices.readthedocs.io/projects/KeysightDCSupply/en/latest/>`_
 
 Lock-in Amplifiers
 ------------------
 
-* SR865
+* `SR865 <https://naqs-devices.readthedocs.io/projects/SR865/en/latest/>`_
 
 
